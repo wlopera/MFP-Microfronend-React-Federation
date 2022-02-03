@@ -1,12 +1,13 @@
 name: deploy-container
 
 on:
-  # Activa el flujo de trabajo en eventos de solicitud de inserción o extracción, pero solo para la rama maestra
-  push:
-    branches:
-      - master
-    paths:
-      - "packages/container/**"
+  workflow_dispatch:
+    # Activa el flujo de trabajo en eventos de solicitud de inserción o extracción, pero solo para la rama maestra
+    push:
+      branches:
+        - master
+      paths:
+        - "packages/container/**"
 
 defaults:
   run:
