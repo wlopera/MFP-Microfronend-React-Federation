@@ -1,8 +1,6 @@
 name: deploy-container
 
 on:
-  workflow_dispatch: Run
-
   # Activa el flujo de trabajo en eventos de solicitud de inserción o extracción, pero solo para la rama maestra
   push:
     branches:
